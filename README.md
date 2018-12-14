@@ -13,6 +13,18 @@ Powershell tools to manage an manipulate STIGs, SCAP scans, XCCDFs, and CLKs
 ## Work flows and scrpits to run
 
 - Download all STIGs and Benchmarks (manually)
+- STIG-ZIP2STIG-XCCDF will extract all STIG XCCDF.xml files from the chosen directory
+- STIG-XCCDF2CKL will launch STIG Viewer 2.8 and convert each of the STIGs to a CKL file
+- STIG-Status will RECURSIVELY look for all CKL files and will:
+  - Analyze all statistics (CAT1,2,3 Open, Not a Finding, etc.)
+  - Creates associated reports in CSV
+  - If multiple versions are detected ie V1R13 and V1R14, it will ask if you want to upgrade the lower CKLs to the higher version.
+  - Pro-tip, you should scan a folder containing your results AND the newly downloaded STIGs in order to upgrade everything, but your score and STATs will be affected. After the upgrade, scan ONLY your reports folder for accurate stats.
+  - (In-progress) Ask if you want to import XCCDF results from ACAS or SCC, they will be imported on top of the existing CKLs. If no CKL is found for a system, it will make a new one.
+  - (Not implemented yet) Rename all files to Hostname - STIG - VxRy
+  - ???
+  - Profit!
+  
 
 ## History of STIGs and SCAP according to u/m00f
 

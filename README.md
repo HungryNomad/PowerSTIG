@@ -22,6 +22,7 @@ Powershell tools to manage an manipulate STIGs, SCAP scans, XCCDFs, and CLKs
   - Pro-tip, you should scan a folder containing your results AND the newly downloaded STIGs in order to upgrade everything, but your score and STATs will be affected. After the upgrade, scan ONLY your reports folder for accurate stats.
   - (In-progress) Ask if you want to import XCCDF results from ACAS or SCC, they will be imported on top of the existing CKLs. If no CKL is found for a system, it will make a new one.
   - (Not implemented yet) Rename all files to Hostname - STIG - VxRy
+- OneCKL2Many - For any manually STIGed system, most likey your settings will be the same on the other systems as well. So choose the CKL that you finished and then copy the results to all other CKLs of that type/OS.
 - ???
 - Profit!
   

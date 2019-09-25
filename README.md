@@ -1,5 +1,6 @@
-# Power STIG
+# Power STIG (Work in progress)
 Powershell tools to manage an manipulate STIGs, SCAP scans, XCCDFs, and CLKs
+Many things have changes and the readme needs to be updated.
 
 ## My Definitions
 - STIG (Manual XCCDF) - Refers to the full scope of settings required to make a system compliant

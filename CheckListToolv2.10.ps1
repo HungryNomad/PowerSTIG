@@ -1,6 +1,6 @@
 ﻿<#
 
-CheckListTool v2.10 - Made by Nanoshi
+CheckListTool v2.10 - Made by HungryNomad
 
 If using this for the first time, make a copy of all of your checklists before running this
 tool against them. It can make bulk changes to all of your files. 
